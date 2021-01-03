@@ -1,0 +1,2 @@
+module pyecto_eclipselink {
+}

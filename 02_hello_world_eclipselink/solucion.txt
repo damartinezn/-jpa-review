@@ -1,0 +1,10 @@
+El problema se debe a que en aplicaciones ejecutadas en modo "Java SE" no está garantizado que
+funcione la localizacón de entitades sin indicarlo explícitamente en elementos class.
+
+Hibernate no requiere esta enumeración, pero EclipseLinke sí.
+
+Para solucionar este error debes modificar el fichero src/main/resources/META-INF/persistence.xml
+y añadir antes del elemento properties:
+
+ <class>org.formacion.jpa.domain.Persona</class>
+ 

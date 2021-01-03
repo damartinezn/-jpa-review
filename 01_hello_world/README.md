@@ -1,0 +1,1 @@
+## Proyecto main mínimo con un JPA usando Hibernate.
